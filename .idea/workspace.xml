@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b319875-926f-4f92-a61f-72aa42dd44bb" name="Default Changelist" comment="" />
+    <list default="true" id="1b319875-926f-4f92-a61f-72aa42dd44bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binary_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/binary_tree.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,16 +13,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Binary_tree$binary_tree.coverage" NAME="binary_tree Coverage Results" MODIFIED="1549308835136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Binary_tree$binary_tree.coverage" NAME="binary_tree Coverage Results" MODIFIED="1549636763533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="836908509">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,12 +40,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1233" />
+          <entry key="py" value="2090" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1233" />
+          <entry key="Python" value="2090" />
         </counts>
       </usages-collector>
     </session>
@@ -48,14 +55,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/binary_tree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="266">
+              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
               <folding>
-                <marker date="1549308950135" expanded="true" signature="40:45" ph="..." />
-                <marker date="1549308950135" expanded="true" signature="40:392" ph="..." />
-                <marker date="1549308950135" expanded="false" signature="40:410" ph="..." />
-                <marker date="1549308950135" expanded="true" signature="40:809" ph="..." />
-                <marker date="1549308950135" expanded="true" signature="487:809" ph="..." />
+                <marker date="1549636832737" expanded="false" signature="40:45" ph="..." />
+                <marker date="1549636832737" expanded="true" signature="40:395" ph="..." />
+                <marker date="1549636832737" expanded="true" signature="40:413" ph="..." />
+                <marker date="1549636832737" expanded="true" signature="40:1443" ph="..." />
+                <marker date="1549636832737" expanded="true" signature="873:1126" ph="..." />
+                <marker date="1549636832737" expanded="true" signature="1164:1443" ph="..." />
               </folding>
             </state>
           </provider>
@@ -78,6 +86,9 @@
       <replace>a</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -92,17 +103,18 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
+    <option name="x" value="940" />
     <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="height" value="1030" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -167,19 +179,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26308724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.69175106" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21852387" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -200,14 +213,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/binary_tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="266">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
           <folding>
-            <marker date="1549308950135" expanded="true" signature="40:45" ph="..." />
-            <marker date="1549308950135" expanded="true" signature="40:392" ph="..." />
-            <marker date="1549308950135" expanded="false" signature="40:410" ph="..." />
-            <marker date="1549308950135" expanded="true" signature="40:809" ph="..." />
-            <marker date="1549308950135" expanded="true" signature="487:809" ph="..." />
+            <marker date="1549636832737" expanded="false" signature="40:45" ph="..." />
+            <marker date="1549636832737" expanded="true" signature="40:395" ph="..." />
+            <marker date="1549636832737" expanded="true" signature="40:413" ph="..." />
+            <marker date="1549636832737" expanded="true" signature="40:1443" ph="..." />
+            <marker date="1549636832737" expanded="true" signature="873:1126" ph="..." />
+            <marker date="1549636832737" expanded="true" signature="1164:1443" ph="..." />
           </folding>
         </state>
       </provider>
