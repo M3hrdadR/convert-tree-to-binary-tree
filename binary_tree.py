@@ -1,3 +1,6 @@
+import pydot
+
+
 def read_tree(matrix, father, index, n):
     for i in range(1, n+1):
         x = int(input("Enter %s child of %s or -1 if it has no children : " % (i, father)))
@@ -28,7 +31,7 @@ def my_sort(matrix):
     return matrix
 
 
-def assign_childs(matrix, c):
+def assign_child(matrix, c):
     child = c + 1
     count = 0
     while count < 2:
@@ -38,13 +41,12 @@ def assign_childs(matrix, c):
             return
         matrix[child][1] = child - 1
         matrix[child - 1][3] = child
-        count += 1
         child += 1
-    return
+        count += 1
 
 
 def convert_to_binary_tree(matrix, n):
-    for j in range(0, len(matrix) // n - 1):
+    for j in range(0, (len(matrix) // n) - 1):
         f = n * j + 1
         if f >= len(matrix):
             break
@@ -52,9 +54,23 @@ def convert_to_binary_tree(matrix, n):
             continue
         matrix[f][1] = j
         matrix[j][2] = f
-        assign_childs(matrix, f)
-
+        assign_child(matrix, f)
     return matrix
+
+
+def draw_tree(matrix):
+    graph = pydot.Dot(graph_type='graph')
+    for x in matrix:
+        if x[0] != -1:
+            # checking left child
+            if matrix[x[2]] != -1:
+                edge = pydot.Edge(str(x[0]), str(matrix[x[2]][0]))
+                graph.add_edge(edge)
+            # checking right child
+            if matrix[x[3]] != -1:
+                edge = pydot.Edge(str(x[0]), str(matrix[x[2]][0]))
+                graph.add_edge(edge)
+    graph.create_png('example1_graph.png')
 
 
 matrix = []
@@ -74,3 +90,4 @@ print()
 matrix = convert_to_binary_tree(matrix, n)
 for i in matrix:
     print(i)
+draw_tree(matrix)
