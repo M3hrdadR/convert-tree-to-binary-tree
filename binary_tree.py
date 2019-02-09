@@ -60,17 +60,28 @@ def convert_to_binary_tree(matrix, n):
 
 def draw_tree(matrix):
     graph = pydot.Dot(graph_type='graph')
+    count = 0
     for x in matrix:
         if x[0] != -1:
             # checking left child
-            if matrix[x[2]] != -1:
+            if x[2] != -1:
                 edge = pydot.Edge(str(x[0]), str(matrix[x[2]][0]))
+                print(str(x[0]), '   ', str(matrix[x[2]][0]))
+                graph.add_edge(edge)
+            else:
+                count -= 10
+                edge = pydot.Edge(str(x[0]), str(count))
                 graph.add_edge(edge)
             # checking right child
-            if matrix[x[3]] != -1:
-                edge = pydot.Edge(str(x[0]), str(matrix[x[2]][0]))
+            if x[3] != -1:
+                edge = pydot.Edge(str(x[0]), str(matrix[x[3]][0]))
+                print(str(x[0]), '   ', str(matrix[x[3]][0]))
                 graph.add_edge(edge)
-    graph.create_png('example1_graph.png')
+            else:
+                count -= 10
+                edge = pydot.Edge(str(x[0]), str(count))
+                graph.add_edge(edge)
+    graph.write_png('graph.png')
 
 
 matrix = []
